@@ -42,7 +42,7 @@
 
 .form-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1.15rem;
 }
 
@@ -123,4 +123,21 @@
 
 .btn-cancel:hover {
   background-color: #d7e5db;
+}
+
+@media (max-width: 520px) {
+  .form-card {
+    padding: 1.35rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-submit,
+  .btn-cancel {
+    width: 100%;
+    text-align: center;
+  }
 }

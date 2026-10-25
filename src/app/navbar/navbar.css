@@ -64,3 +64,22 @@
   background-color: #3b7252;
   color: #ffffff;
 }
+
+@media (max-width: 640px) {
+  .navbar-inner {
+    padding: 0.85rem 1rem;
+  }
+
+  .brand {
+    font-size: 1.05rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    padding: 0.4rem 0.7rem;
+  }
+}

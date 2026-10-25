@@ -65,7 +65,7 @@
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr));
   gap: 1.25rem;
 }
 
@@ -78,4 +78,15 @@
   text-align: center;
   color: #4f6354;
   font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .list-top {
+    padding: 1.25rem;
+  }
+
+  .btn-add {
+    width: 100%;
+    text-align: center;
+  }
 }

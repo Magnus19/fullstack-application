@@ -1,3 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+:root {
+  --league-green: #234732;
+  --league-green-dark: #193524;
+  --league-bg: #f3f7f4;
+  --league-text: #1a2e22;
+  --league-muted: #526658;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(59, 114, 82, 0.12), transparent 32rem),
+    var(--league-bg);
+  color: var(--league-text);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
