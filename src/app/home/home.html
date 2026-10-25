@@ -1,0 +1,35 @@
+<section class="home-panel">
+  <div class="hero-header">
+    <span class="eyebrow">Pokémon League Official Portal</span>
+    <h1>Gym Leader Registry</h1>
+    <p>
+      Welcome to the official Pokémon League record system. View, register, and
+      maintain active Gym Leaders across the Kanto, Johto, and Hoenn regions.
+    </p>
+  </div>
+
+  <div class="stats-grid">
+    <article class="stat-card kanto-card">
+      <div class="stat-region">Kanto Region</div>
+      <div class="stat-value">{{ leaderService.kantoCount() }}</div>
+      <div class="stat-caption">Registered Gym Leaders</div>
+    </article>
+
+    <article class="stat-card johto-card">
+      <div class="stat-region">Johto Region</div>
+      <div class="stat-value">{{ leaderService.johtoCount() }}</div>
+      <div class="stat-caption">Registered Gym Leaders</div>
+    </article>
+
+    <article class="stat-card hoenn-card">
+      <div class="stat-region">Hoenn Region</div>
+      <div class="stat-value">{{ leaderService.hoennCount() }}</div>
+      <div class="stat-caption">Registered Gym Leaders</div>
+    </article>
+  </div>
+
+  <div class="hero-actions">
+    <a routerLink="/leaders" class="btn-primary">Browse All Gym Leaders</a>
+    <a routerLink="/leaders/new" class="btn-secondary">Register a Gym Leader</a>
+  </div>
+</section>

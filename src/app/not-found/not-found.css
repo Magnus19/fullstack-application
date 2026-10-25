@@ -1,0 +1,36 @@
+.not-found-panel {
+  background-color: #ffffff;
+  border: 1px solid #d7e3d9;
+  border-radius: 14px;
+  padding: 3rem 2rem;
+  text-align: center;
+  max-width: 540px;
+  margin: 2rem auto;
+}
+
+.code {
+  font-size: 3.25rem;
+  font-weight: 800;
+  color: #234732;
+}
+
+.not-found-panel h2 {
+  font-size: 1.5rem;
+  margin: 0.4rem 0;
+  color: #1a2e22;
+}
+
+.not-found-panel p {
+  color: #526658;
+  margin-bottom: 1.5rem;
+}
+
+.home-link {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  background-color: #234732;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}

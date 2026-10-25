@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
+import { Home } from './home/home';
+import { NotFound } from './not-found/not-found';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home, title: 'Home | Gym Leader Registry' },
+  { path: '**', component: NotFound, title: 'Page Not Found' },
+];
