@@ -1,0 +1,37 @@
+<article class="leader-card" [class]="'region-' + leader().region.toLowerCase()">
+  <div class="card-header">
+    <div>
+      <h3 class="leader-name">{{ leader().name }}</h3>
+      <p class="leader-town">{{ leader().town }}</p>
+    </div>
+    <span class="region-badge">{{ leader().region }}</span>
+  </div>
+
+  <div class="card-body">
+    <div class="detail-row">
+      <span class="detail-label">Badge:</span>
+      <span class="detail-value">{{ leader().badge }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="detail-label">Specialty:</span>
+      <span class="detail-value">{{ leader().specialty }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="detail-label">Ace Level:</span>
+      <span class="detail-value">Lv. {{ leader().aceLevel }}</span>
+    </div>
+
+    @if (leader().motto) {
+      <blockquote class="leader-motto">"{{ leader().motto }}"</blockquote>
+    }
+  </div>
+
+  <div class="card-footer">
+    <button type="button" class="btn-card btn-edit" (click)="onEditClick()">
+      Edit
+    </button>
+    <button type="button" class="btn-card btn-remove" (click)="onRemoveClick()">
+      Remove
+    </button>
+  </div>
+</article>

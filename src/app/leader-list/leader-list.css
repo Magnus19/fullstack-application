@@ -1,0 +1,81 @@
+.list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #d7e3d9;
+}
+
+.list-top h2 {
+  font-size: 1.5rem;
+  color: #1a2e22;
+}
+
+.list-top p {
+  color: #526658;
+  font-size: 0.94rem;
+}
+
+.btn-add {
+  background-color: #234732;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.65rem 1.15rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.btn-add:hover {
+  background-color: #193524;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter-pill {
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid #bfd0c3;
+  background-color: #ffffff;
+  color: #2c4434;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.filter-pill.active {
+  background-color: #234732;
+  color: #ffffff;
+  border-color: #234732;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 1.25rem;
+}
+
+.empty-box {
+  grid-column: 1 / -1;
+  background-color: #ffffff;
+  border: 1px dashed #b8cbbd;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  color: #4f6354;
+  font-weight: 500;
+}

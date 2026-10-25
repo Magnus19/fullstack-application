@@ -1,0 +1,35 @@
+<section class="list-section">
+  <div class="list-top">
+    <div>
+      <h2>Official Gym Leader Roster</h2>
+      <p>Filter leaders by region, edit records, or retire leaders from service.</p>
+    </div>
+    <a routerLink="/leaders/new" class="btn-add">+ Register Gym Leader</a>
+  </div>
+
+  <div class="filter-bar" role="group" aria-label="Region filter">
+    @for (region of regions; track region) {
+      <button
+        type="button"
+        class="filter-pill"
+        [class.active]="selectedRegion() === region"
+        (click)="selectRegion(region)">
+        {{ region }}
+      </button>
+    }
+  </div>
+
+  <div class="cards-grid">
+    @for (leader of filteredLeaders(); track leader._id) {
+      <app-leader-card
+        [leader]="leader"
+        (edit)="onEdit($event)"
+        (remove)="onRemove($event, leader.name)">
+      </app-leader-card>
+    } @empty {
+      <div class="empty-box">
+        <p>No Gym Leaders registered yet.</p>
+      </div>
+    }
+  </div>
+</section>
